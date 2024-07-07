@@ -582,7 +582,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #2b2320;
+  background: #090442;
   min-height: 40px;
 }
 
@@ -602,7 +602,7 @@ section {
 }
 
 .breadcrumbs ol a {
-  color: #fe825a;
+  color: #b15638;
 }
 
 .breadcrumbs ol li+li {
@@ -698,7 +698,7 @@ section {
   margin-bottom: 25px;
   text-align: center;
   border: 1px solid #ebe6e4;
-  height: 200px;
+  height: 280px;
   position: relative;
   background: #faf9f8;
 }
@@ -996,7 +996,13 @@ section {
 }
 
 .about-us .image {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("../img/pexels-yankrukov-8866726.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.about-us .image-1 {
+  background: url("../img/pexels-nanadua11-3586249.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
@@ -2040,12 +2046,12 @@ section {
 #footer {
   color: #b4aca8;
   font-size: 14px;
-  background: #14100f;
+  background: #080218;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: black;
+  background:  #080218;
 }
 
 #footer .footer-top .footer-contact {
