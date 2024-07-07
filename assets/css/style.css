@@ -702,6 +702,14 @@ section {
   position: relative;
   background: #faf9f8;
 }
+.services h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
 
 .services .icon {
   position: absolute;
@@ -757,7 +765,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
+/*.portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 50px auto;
   list-style: none;
@@ -859,7 +867,151 @@ section {
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 20px;
+}*/
+.portfolio h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+  width: 32%; 
+  height: 350px;
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .portfolio .portfolio-item {
+    width: 48%;
+  }
+}
+
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .portfolio .portfolio-item {
+    width: 100%;
+  }
+}
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: #d9232d;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(85, 98, 112, 0.6);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(85, 98, 112, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 5px 0 0;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: white;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.2);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -996,13 +1148,13 @@ section {
 }
 
 .about-us .image {
-  background: url("../img/pexels-yankrukov-8866726.jpg") center center no-repeat;
+  background: url("../img/pexels-polina-tankilevitch-6927396.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
 
 .about-us .image-1 {
-  background: url("../img/pexels-nanadua11-3586249.jpg") center center no-repeat;
+  background: url("../img/pexels-mart-production-7709093.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
